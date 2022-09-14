@@ -1,3 +1,24 @@
+# [1.1.0](https://github.com/ialexanderbrito/duo/compare/v1.0.0...v1.1.0) (2022-09-14)
+
+
+### Bug Fixes
+
+* api url ([e1838d7](https://github.com/ialexanderbrito/duo/commit/e1838d7d72208b065332597fb45af747966ee075))
+* env example ([5f0e0f5](https://github.com/ialexanderbrito/duo/commit/5f0e0f55cb630945744ab2eb6f2949186a2b6187))
+* gitignore ([d3fbe13](https://github.com/ialexanderbrito/duo/commit/d3fbe1334fdbe4dcf3eadf4577ff75a9bf1e5212))
+* rules eslint ([ebc90d7](https://github.com/ialexanderbrito/duo/commit/ebc90d72de6aa0bfa7402c59a24d80e44145e683))
+
+
+### Features
+
+* add component create ad banner ([12d670e](https://github.com/ialexanderbrito/duo/commit/12d670e53e70093e56e22ac2e2b36f2fc0e764bd))
+* add component game banner ([06f3620](https://github.com/ialexanderbrito/duo/commit/06f3620fb49ed65c3757a4701491dd8e6a9825a8))
+* add component input ([d7c81c8](https://github.com/ialexanderbrito/duo/commit/d7c81c8b89dfea625c276d61572aa2eb1e207c33))
+* add page home ([824b3a2](https://github.com/ialexanderbrito/duo/commit/824b3a2f57c698ca96c3a98c55b15651560ae5c2))
+* add radix ui dialog ([64e1430](https://github.com/ialexanderbrito/duo/commit/64e1430392719c99b0453347ef8ed0f063feca03))
+* add routes api games ([a0f4661](https://github.com/ialexanderbrito/duo/commit/a0f46613ba287721315f4b1d95c9943ba8d55434))
+* update icon ([b5b25be](https://github.com/ialexanderbrito/duo/commit/b5b25bea2cbc47822a72b055172ae12fb692e465))
+
 # 1.0.0 (2022-09-14)
 
 
