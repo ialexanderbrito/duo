@@ -2,17 +2,16 @@ import { BrowserRouter } from 'react-router-dom';
 
 import { MainRoutes } from 'routes';
 
-import { ThemeProvider } from 'contexts/Theme';
 import { ToastProvider } from 'contexts/Toast';
+
+import 'styles/main.css';
 
 export function App() {
   return (
     <ToastProvider>
-      <ThemeProvider>
-        <BrowserRouter>
-          <MainRoutes />
-        </BrowserRouter>
-      </ThemeProvider>
+      <BrowserRouter>
+        <MainRoutes />
+      </BrowserRouter>
     </ToastProvider>
   );
 }
