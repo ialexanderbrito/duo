@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "@radix-ui/react-dialog": "^1.0.0",
+    "@uiball/loaders": "^1.2.6",
     "axios": "^0.27.2",
     "formik": "^2.2.9",
     "phosphor-react": "^1.4.1",
