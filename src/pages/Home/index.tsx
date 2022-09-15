@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 
 import * as Dialog from '@radix-ui/react-dialog';
+import { LeapFrog } from '@uiball/loaders';
 import logoImg from 'assets/logo-esports.svg';
 import { GameController } from 'phosphor-react';
 
@@ -24,14 +25,18 @@ interface Game {
 export function Homepage() {
   const { toast } = useToast();
   const [games, setGames] = useState<Game[]>([]);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     async function loadGames() {
       try {
         const { data } = await getGames();
         setGames(data);
+        setIsLoading(false);
       } catch (error) {
         toast.error('Erro ao carregar jogos');
+      } finally {
+        setIsLoading(false);
       }
     }
 
@@ -51,6 +56,11 @@ export function Homepage() {
           está aqui
         </h1>
 
+        {isLoading && (
+          <div className="flex  mt-16 mb--16">
+            <LeapFrog color="#9572fc" />
+          </div>
+        )}
         <div className="grid-cols-6 grid gap-6 mt-16">
           {games.slice(0, 6).map((game) => (
             <GameBanner
