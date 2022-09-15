@@ -1,3 +1,11 @@
+# [1.2.0](https://github.com/ialexanderbrito/duo/compare/v1.1.0...v1.2.0) (2022-09-15)
+
+
+### Features
+
+* add loaders ([dd33dfe](https://github.com/ialexanderbrito/duo/commit/dd33dfe60a6ef075c85c6533c0f1fe9a27f8a741))
+* add loading ([53e454e](https://github.com/ialexanderbrito/duo/commit/53e454ef8aababc5858b6dd0af9e5efa419554cb))
+
 # [1.1.0](https://github.com/ialexanderbrito/duo/compare/v1.0.0...v1.1.0) (2022-09-14)
 
 
