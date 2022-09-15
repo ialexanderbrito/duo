@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/ialexanderbrito/duo/compare/v1.2.0...v1.2.1) (2022-09-15)
+
+
+### Bug Fixes
+
+* alt img name game ([2e90329](https://github.com/ialexanderbrito/duo/commit/2e9032943dce980ead70aa181fc2bbd9beaef5c3))
+
 # [1.2.0](https://github.com/ialexanderbrito/duo/compare/v1.1.0...v1.2.0) (2022-09-15)
 
 
