@@ -1,4 +1,7 @@
+import { Link } from 'react-router-dom';
+
 interface GameBannerProps {
+  id: string;
   bannerUrl: string;
   title: string;
   adsCount: number;
@@ -6,7 +9,10 @@ interface GameBannerProps {
 
 export function GameBanner(props: GameBannerProps) {
   return (
-    <a href="" className="relative rounded-lg overflow-hidden">
+    <Link
+      to={`/game/${props.id}`}
+      className="keen-slider__slide relative rounded-lg overflow-hidden flex-shrink-0"
+    >
       <img src={props.bannerUrl} alt={props.title} />
 
       <div className="w-full pt-16 pb-4 px-4 bg-game-gradient absolute bottom-0 left-0 right-0">
@@ -15,6 +21,6 @@ export function GameBanner(props: GameBannerProps) {
           {props.adsCount} anúncio(s)
         </span>
       </div>
-    </a>
+    </Link>
   );
 }
