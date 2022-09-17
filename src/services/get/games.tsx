@@ -5,3 +5,9 @@ export async function getGames() {
 
   return { data };
 }
+
+export async function getGameId(id: string) {
+  const { data } = await api.get(`/game/${id}`);
+
+  return { data };
+}
