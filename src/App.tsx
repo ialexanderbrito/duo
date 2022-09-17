@@ -4,6 +4,7 @@ import { MainRoutes } from 'routes';
 
 import { ToastProvider } from 'contexts/Toast';
 
+import 'keen-slider/keen-slider.min.css';
 import 'styles/main.css';
 
 export function App() {
