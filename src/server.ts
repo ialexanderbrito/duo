@@ -33,11 +33,8 @@ app.get('/game/:id', async (request, response) => {
 
   const game = await prisma.game.findUnique({
     where: {
-      id: Number(id),
+      id: id,
     },
-    include: {
-      ads: true,
-    }
   });
 
   return response.json(game);
