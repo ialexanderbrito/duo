@@ -28,6 +28,21 @@ app.get('/games', async (request, response) => {
   return response.json(games);
 });
 
+app.get('/game/:id', async (request, response) => {
+  const { id } = request.params;
+
+  const game = await prisma.game.findUnique({
+    where: {
+      id: Number(id),
+    },
+    include: {
+      ads: true,
+    }
+  });
+
+  return response.json(game);
+});
+
 app.post('/games/:id/ads', async (request, response) => {
   const gameId = request.params.id;
   const body: any = request.body;
