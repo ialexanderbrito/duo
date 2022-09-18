@@ -41,8 +41,8 @@ export function CreateAdModal() {
   return (
     <Dialog.Portal>
       <Dialog.Overlay className="bg-black/60 inset-0 fixed" />
-      <Dialog.Content className="fixed bg-[#2a2634] py-8 px-10 text-white top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-lg w-[480px] shadow-lg shadow-black/25">
-        <Dialog.Title className="text-3xl font-black">
+      <Dialog.Content className="fixed bg-[#2a2634] top-1/2 left-1/2 max-h-screen w-full max-w-[480px] -translate-x-1/2 -translate-y-1/2 overflow-y-auto rounded-sm py-8 px-10 text-white shadow-lg shadow-black/25 sm:rounded-lg">
+        <Dialog.Title className="text-xl font-black sm:text-2xl md:text-3xl">
           Publique um anúncio
         </Dialog.Title>
 
@@ -109,7 +109,7 @@ export function CreateAdModal() {
             )}
           </div>
 
-          <div className="grid grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-6">
             <div className="flex flex-col gap-2">
               <label htmlFor="yearsPlaying">Joga a quantos anos?</label>
               <Input
@@ -146,11 +146,16 @@ export function CreateAdModal() {
 
           <div className="flex gap-6">
             <div className="flex flex-col gap-2">
-              <label htmlFor="weekDays">Quando costuma jogar?</label>
+              <label
+                htmlFor="weekDays"
+                className="text-sm font-semibold sm:text-base"
+              >
+                Quando costuma jogar?
+              </label>
 
               <ToggleGroup.Root
                 type="multiple"
-                className="grid grid-cols-4 gap-2"
+                className="flex flex-wrap gap-2 sm:grid sm:grid-cols-4"
                 value={formCreateAd.values.weekDays}
                 onValueChange={(value) => {
                   formCreateAd.setFieldValue('weekDays', value);
@@ -240,9 +245,19 @@ export function CreateAdModal() {
                   S
                 </ToggleGroup.Item>
               </ToggleGroup.Root>
+              {formCreateAd.errors.weekDays && (
+                <p className="text-red-500 text-xs">
+                  {formCreateAd.errors.weekDays}
+                </p>
+              )}
             </div>
             <div className="flex flex-col gap-2 flex-1">
-              <label htmlFor="hourStart">Qual horário do dia?</label>
+              <label
+                htmlFor="hourStart"
+                className="cursor-pointer text-sm font-semibold sm:text-base"
+              >
+                Qual horário do dia?
+              </label>
               <div className="grid grid-cols-2 gap-2">
                 <Input
                   value={formCreateAd.values.hourStart}
@@ -274,17 +289,29 @@ export function CreateAdModal() {
                   formCreateAd.setFieldValue('voiceChannel', false);
                 }
               }}
-              className="w-6 h-6 p-1 rounded-sm bg-zinc-900"
+              className="aspect-square w-5 rounded bg-zinc-900 p-1 md:w-6"
             >
               <Checkbox.Indicator>
                 <Check className="w-4 h-4 text-emerald-400" />
               </Checkbox.Indicator>
             </Checkbox.Root>
-            Costumo me conectar ao chat de voz
+            <label
+              onClick={() => {
+                if (formCreateAd.values.voiceChannel === true) {
+                  formCreateAd.setFieldValue('voiceChannel', false);
+                } else {
+                  formCreateAd.setFieldValue('voiceChannel', true);
+                }
+              }}
+              htmlFor="useVoiceChannel"
+              className="cursor-pointer text-xs sm:text-sm"
+            >
+              Costumo me conectar ao chat de voz
+            </label>
           </label>
 
           <footer className="mt-4 flex justify-end gap-4">
-            <Dialog.Close className="bg-zinc-500 px-5 h-12 rounded-md font-semibold hover:bg-zinc-600">
+            <Dialog.Close className="rounded-md bg-zinc-500 py-2.5 px-3.5 text-sm font-semibold transition-colors hover:bg-zinc-600 sm:px-5 sm:py-3 sm:text-base">
               Cancelar
             </Dialog.Close>
             <button

@@ -31,6 +31,7 @@ export function Homepage() {
   const [loaded, setLoaded] = useState(false);
   const [currentSlide, setCurrentSlide] = useState(0);
   const [sliderRef, instanceRef] = useKeenSlider<HTMLDivElement>({
+    dragSpeed: 3,
     initial: 0,
     loop: true,
     slides: {
@@ -42,6 +43,38 @@ export function Homepage() {
     },
     created() {
       setLoaded(true);
+    },
+    breakpoints: {
+      '(min-width: 425px)': {
+        slides: {
+          perView: 2,
+          spacing: 18,
+        },
+      },
+      '(min-width: 640px)': {
+        slides: {
+          perView: 3,
+          spacing: 16,
+        },
+      },
+      '(min-width: 768px)': {
+        slides: {
+          perView: 4,
+          spacing: 18,
+        },
+      },
+      '(min-width: 1024px)': {
+        slides: {
+          perView: 5,
+          spacing: 20,
+        },
+      },
+      '(min-width: 1280px)': {
+        slides: {
+          perView: 6,
+          spacing: 24,
+        },
+      },
     },
   });
 
@@ -77,10 +110,10 @@ export function Homepage() {
 
   return (
     <>
-      <div className="max-w-[1344px] mx-auto flex flex-col items-center my-20">
+      <div className="max-w-[1344px] mx-auto flex flex-col items-center my-10 px-4 sm:my-14 md:my-16 xl:my-20">
         <img src={logoImg} alt="eSports" />
 
-        <h1 className="text-6xl text-white font-black mt-20">
+        <h1 className="text-3xl text-white font-black mt-10 sm:mt-14 md:mt-16 md:text-4xl lg:text-5xl xl:mt-20 xl:text-6xl">
           Seu{' '}
           <span className="bg-nlw-gradient bg-clip-text text-transparent">
             duo

@@ -13,7 +13,7 @@ export function useCreateAd() {
       name: '',
       discord: '',
       yearsPlaying: '',
-      weekDays: [''],
+      weekDays: [],
       hourStart: '',
       hourEnd: '',
       voiceChannel: false,
