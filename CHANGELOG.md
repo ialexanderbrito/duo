@@ -1,3 +1,31 @@
+# [1.3.0](https://github.com/ialexanderbrito/duo/compare/v1.2.1...v1.3.0) (2022-09-18)
+
+
+### Bug Fixes
+
+* array weekdays ([f491764](https://github.com/ialexanderbrito/duo/commit/f491764e85d1d31fc93cee9a13538dbf6c9c56ce))
+* css input time and number ([2b4439a](https://github.com/ialexanderbrito/duo/commit/2b4439a354ea74724212202bd62103a4dc28c76b))
+* link game banner ([642ff1b](https://github.com/ialexanderbrito/duo/commit/642ff1bb61f517fa38e3a83522983217b00aceaf))
+* types stateless component ([3592040](https://github.com/ialexanderbrito/duo/commit/3592040040d3568d48e34a4f04f364c7b0241f18))
+* yarn.lock ([15c6326](https://github.com/ialexanderbrito/duo/commit/15c6326a01b5f3d1966f3ca22a65a10812927f4c))
+
+
+### Features
+
+* add component arrow slider ([5e3cb6f](https://github.com/ialexanderbrito/duo/commit/5e3cb6f1d2b52b41d863cf4b7ea1c88277683090))
+* add component card user ([44d6a8e](https://github.com/ialexanderbrito/duo/commit/44d6a8efe1997c7eb44a0d121b4108b69ef9f9f3))
+* add component modal ([e41457d](https://github.com/ialexanderbrito/duo/commit/e41457de4c81cc82f527882b3ec7bc32021c77c4))
+* add hook form and validation ([cdfe5a5](https://github.com/ialexanderbrito/duo/commit/cdfe5a5c0f019ebf3de370f2c05ea5f1be62f9eb))
+* add keen-slider css ([fd99f27](https://github.com/ialexanderbrito/duo/commit/fd99f277370ce219d6760d041717c2f7ae46bbc3))
+* add new services get ads ([ef80545](https://github.com/ialexanderbrito/duo/commit/ef805454fad9845524aff596d41cdc4158176857))
+* add new services get game id ([9324d62](https://github.com/ialexanderbrito/duo/commit/9324d62b250a03bebe8a9f0b5819487736bafee3))
+* add new services post ad ([abb59ef](https://github.com/ialexanderbrito/duo/commit/abb59ef23404d048dd4746510659f895e6f73a79))
+* add page game ad ([e8b6d73](https://github.com/ialexanderbrito/duo/commit/e8b6d73230d903e24033b38626746c4b84aa2104))
+* add page home with slider game banner ([c213f9f](https://github.com/ialexanderbrito/duo/commit/c213f9fa289c93d1a237ec858ad03cb19faaa16d))
+* add radix checkbox, select, toggle and keen-slider ([c44124b](https://github.com/ialexanderbrito/duo/commit/c44124be20735e7b32256159e60fcb3d3f6ae13f))
+* add redirects netlify ([4537fe0](https://github.com/ialexanderbrito/duo/commit/4537fe0ca4adb9ed2157fcca6b639963f9fec216))
+* add route game ads ([8760e61](https://github.com/ialexanderbrito/duo/commit/8760e6187d3f7c72aeff1f074583ff76c642a858))
+
 ## [1.2.1](https://github.com/ialexanderbrito/duo/compare/v1.2.0...v1.2.1) (2022-09-15)
 
 
