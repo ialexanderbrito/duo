@@ -15,9 +15,8 @@ export const adSchemaValidation = yup.object({
     .array()
     .of(
       yup
-        .number()
+        .string()
         .required()
-        .integer('Cada dia da semana deve ser um número inteiro.')
         .min(0, 'Cada dia da semana deve ser um número inteiro de 0 a 6.')
         .max(6, 'Cada dia da semana deve ser um número inteiro de 0 a 6.')
         .typeError('Cada dia da semana deve ser um número inteiro de 0 a 6.'),
