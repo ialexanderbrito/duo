@@ -1,3 +1,16 @@
+# [1.4.0](https://github.com/ialexanderbrito/duo/compare/v1.3.0...v1.4.0) (2022-09-18)
+
+
+### Bug Fixes
+
+* validation discord and weekdays ([ca8bd20](https://github.com/ialexanderbrito/duo/commit/ca8bd203b255bcf72e3583c4c4a74265a737e01c))
+* weekdays array ([10f6a8a](https://github.com/ialexanderbrito/duo/commit/10f6a8a558f049cf12a8decec75ff3ea36160da8))
+
+
+### Features
+
+* add responsive ([741d97c](https://github.com/ialexanderbrito/duo/commit/741d97c9709d2bf300945ba2dc02ac0fc9e2af9c))
+
 # [1.3.0](https://github.com/ialexanderbrito/duo/compare/v1.2.1...v1.3.0) (2022-09-18)
 
 
