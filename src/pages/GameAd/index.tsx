@@ -7,6 +7,7 @@ import { Ads, Game } from 'interfaces/GameAd';
 import { useKeenSlider } from 'keen-slider/react';
 import { CaretLeft, CaretRight } from 'phosphor-react';
 
+import { CreateAdBanner } from 'components/CreateAdBanner';
 import { UserBanner } from 'components/UserBanner';
 
 import { useToast } from 'contexts/Toast';
@@ -107,13 +108,14 @@ export function GamedAd() {
         <img
           src={game.bannerUrl}
           alt={game.title}
-          className="w-2/4 h-72 bg-cover object-cover rounded-lg"
+          className="w-7/12 h-72 bg-cover object-cover rounded-lg"
         />
 
-        <h1 className="text-white font-black text-5xl mt-3 w-2/4 ">
-          {game.title}
-        </h1>
-        <p className="w-2/4 text-zinc-400">Conecte-se e comece a jogar!</p>
+        <div className="max-w-[1344px] flex flex-col items-start justify-start w-7/12">
+          <h1 className="text-white font-black text-5xl mt-3">{game.title}</h1>
+
+          <p className="text-zinc-400">Conecte-se e comece a jogar!</p>
+        </div>
 
         {isLoading && (
           <div className="flex  mt-16 mb--16">
@@ -121,12 +123,9 @@ export function GamedAd() {
           </div>
         )}
 
-        {ads.length === 0 && (
-          <div className="flex flex-col items-center justify-center mt-6">
-            <h1 className="text-white font-black text-3xl mt-3 sm:text-5xl">
-              Nenhum duo encontrado
-            </h1>
-            <p className="w-full text-zinc-400">Tente novamente mais tarde</p>
+        {!isLoading && ads.length === 0 && (
+          <div className="w-7/12">
+            <CreateAdBanner />
           </div>
         )}
 
