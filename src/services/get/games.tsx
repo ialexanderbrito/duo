@@ -11,3 +11,9 @@ export async function getGameId(id: string) {
 
   return { data };
 }
+
+export async function getDiscordId(id: string) {
+  const { data } = await api.get(`/ads/${id}/discord`);
+
+  return { data };
+}
