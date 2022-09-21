@@ -1,3 +1,18 @@
+# [1.5.0](https://github.com/ialexanderbrito/duo/compare/v1.4.0...v1.5.0) (2022-09-21)
+
+
+### Bug Fixes
+
+* remove arrow ([11f383c](https://github.com/ialexanderbrito/duo/commit/11f383c07f848017417e60ac78d68e1222810cde))
+* user banner discord modal ([62c13dd](https://github.com/ialexanderbrito/duo/commit/62c13ddb74a03387a4cae2dcd9d1f712957a187d))
+
+
+### Features
+
+* add component discord modal ([ea973cc](https://github.com/ialexanderbrito/duo/commit/ea973cc8f3def7759f1780c3b2f0a8430e323ce2))
+* add interface ([d61928b](https://github.com/ialexanderbrito/duo/commit/d61928b6c516668e354e65d5d55ff3b192f77ca2))
+* add service get discord ([85d7e6c](https://github.com/ialexanderbrito/duo/commit/85d7e6c930a65175768dfbd63f289dfb2eddf880))
+
 # [1.4.0](https://github.com/ialexanderbrito/duo/compare/v1.3.0...v1.4.0) (2022-09-18)
 
 
