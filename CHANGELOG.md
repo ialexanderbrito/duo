@@ -1,3 +1,10 @@
+## [1.5.1](https://github.com/ialexanderbrito/duo/compare/v1.5.0...v1.5.1) (2022-09-21)
+
+
+### Bug Fixes
+
+* preview ([ac1cd34](https://github.com/ialexanderbrito/duo/commit/ac1cd3463f3162671b346806943a0646204799c4))
+
 # [1.5.0](https://github.com/ialexanderbrito/duo/compare/v1.4.0...v1.5.0) (2022-09-21)
 
 
