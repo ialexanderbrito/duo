@@ -1,3 +1,10 @@
+## [1.5.2](https://github.com/ialexanderbrito/duo/compare/v1.5.1...v1.5.2) (2022-09-21)
+
+
+### Bug Fixes
+
+* page game ad ([77349e1](https://github.com/ialexanderbrito/duo/commit/77349e1800628f9c23388e1ebc87305d384a4b5d))
+
 ## [1.5.1](https://github.com/ialexanderbrito/duo/compare/v1.5.0...v1.5.1) (2022-09-21)
 
 
