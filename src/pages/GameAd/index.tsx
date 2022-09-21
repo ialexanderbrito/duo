@@ -27,7 +27,7 @@ export function GamedAd() {
     dragSpeed: 3,
     loop: true,
     slides: {
-      perView: 2,
+      perView: 1,
       spacing: 12,
     },
     breakpoints: {
@@ -39,7 +39,7 @@ export function GamedAd() {
       },
       '(min-width: 640px)': {
         slides: {
-          perView: 2,
+          perView: 1,
           spacing: 16,
         },
       },
