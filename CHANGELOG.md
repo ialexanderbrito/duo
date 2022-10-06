@@ -1,3 +1,10 @@
+## [1.5.3](https://github.com/ialexanderbrito/duo/compare/v1.5.2...v1.5.3) (2022-10-06)
+
+
+### Bug Fixes
+
+* weekDays validation ([9ede31c](https://github.com/ialexanderbrito/duo/commit/9ede31cf1a055736166a0159fab0e5da4e3323c2))
+
 ## [1.5.2](https://github.com/ialexanderbrito/duo/compare/v1.5.1...v1.5.2) (2022-09-21)
 
 
