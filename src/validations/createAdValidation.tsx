@@ -11,17 +11,4 @@ export const adSchemaValidation = yup.object({
       'Digite um discord válido (ex: user#1234)',
     ),
   yearsPlaying: yup.number().required('Digite quantos anos joga'),
-  weekDays: yup
-    .array()
-    .of(
-      yup
-        .string()
-        .required()
-        .min(0, 'Cada dia da semana deve ser um número inteiro de 0 a 6.')
-        .max(6, 'Cada dia da semana deve ser um número inteiro de 0 a 6.')
-        .typeError('Cada dia da semana deve ser um número inteiro de 0 a 6.'),
-    )
-    .required('Selecione pelo menos um dia da semana')
-    .min(1, 'Selecione pelo menos um dia da semana.')
-    .typeError('Selecione pelo menos um dia da semana.'),
 });
